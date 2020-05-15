@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    </head>
+    <body ng-app="">
+
+            <div>
+                    Quare of 12 = {{ 12 * 12}} <!-- Expression using number-->
+            <div ng-init = "colors = ['Red', 'Gree', 'Blue', 'Orange']">
+                    <p ng-repeat = "c in colors">
+                            name of color : {{ c}}<br> <!--Epression using Array-->
+                   </p>
+            </div>
+
+            <div ng-init="student = { name: 'mars' , college :'dypsn' , prn :35433, contact : 9949494}">
+                        Name of student : {{student.name}}<br>
+                        College Name      : {{student.college}}<br><!-- Expression using Object-->
+                        PRN Number       : {{student.prn}}<br>
+                        contact number   : {{student.contact}}
+            </div>
+    </body>
+</html>
