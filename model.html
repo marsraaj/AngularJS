@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>AngulaJS-| ng-model/ng-bind</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    </head>
+    <body  ng-app="">
+        <h2>ng-bind Attribute</h2>
+        <input type="input" ng-model="name">
+        <textarea ng-bind="name"></textarea>
+        <div ng-bind="name"></div>
+        <select ng-model="country">
+            <option name="india">India</option>
+            <option name ="America">America</option>
+            <option name="Shrilanka">Shrilanka</option>
+        </select>
+        <div ng-bind="country"></div>
+    </body>
+</html>
