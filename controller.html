@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    </head>
+    <body ng-app="myLanguageApp">
+            <h3>Controller in angularJs<h3> <br>
+            <pre>
+            <div ng-controller="language">
+                    <button ng-click="php()"> php      </button>      <button ng-click="java()"> java    </button> <br>
+                    <button ng-click="javaScript()"> javaScript</button>      <button ng-click="jsp()"> jsp      </button><br>
+                    <button ng-click="servlet()"> servlet   </button>      <button ng-click="nodejs()"> nodejs   </button><br>
+
+                    <p> You have Selected :  {{myFavLanguage}}</p>
+            </div>
+            <script>
+                    var application = angular.module("myLanguageApp",[]);
+                    application .controller("language", function ($scope){
+                        $scope.myFavLanguage = "None";
+                        $scope.php =function(){
+                            $scope .myFavLanguage= "php";
+                        }
+
+                        $scope.java =function(){
+                            $scope .myFavLanguage= "java";
+                        }
+
+                        $scope.javaScript =function(){
+                            $scope .myFavLanguage= "javaScript";
+                        }
+
+                        $scope.jsp =function(){
+                            $scope .myFavLanguage= "jsp";
+                        }
+
+                        $scope.servlet =function(){
+                            $scope .myFavLanguage= "servlet";
+                        }
+                        $scope.nodejs =function(){
+                            $scope .myFavLanguage= "nodejs";
+                        }
+                    } )
+            </script>
+            </pre>
+    </body>
+</html>
